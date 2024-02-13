@@ -6,13 +6,13 @@ import shared.SharedMessages
 import play.api.mvc._
 
 @Singleton
-class Application @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
+class NBATeams @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
 
   def index = Action {
     Ok(views.html.index(SharedMessages.itWorks))
   }
   
-  def hello = Action {
+  def getNBATable = Action {
     Ok(views.html.index(SharedMessages.itWorks))
   }
 
