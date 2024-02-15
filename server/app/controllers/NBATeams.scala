@@ -13,7 +13,7 @@ class NBATeams @Inject()(cc: ControllerComponents) extends AbstractController(cc
   }
   
   def getNBATable = Action {
-    Ok(views.html.index(SharedMessages.itWorks))
+    Ok(views.html.NBATable(models.NBATeams.tableHeader, models.NBATeams.tableData))
   }
 
 }

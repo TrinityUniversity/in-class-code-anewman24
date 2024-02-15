@@ -1,0 +1,17 @@
+@(header:Array[String], data: Array[Array[String]])
+
+@main("NBA") {
+  You figure this out.
+  <table>
+    <tr>
+    @for(h <- header) {
+      <td>@h</td>  
+    }
+    <br>
+    @for(d <- data) {
+        <td>@d</td>
+        <br>
+    }
+    </tr>
+  </table>
+}
