@@ -6,7 +6,9 @@
 GET        /                             controllers.Application.index
 GET        /hello                        controllers.Hello.hello
 GET        /data                         controllers.NBATeams.getNBATable
+GET        /form1                        controllers.SampleForm.login
+GET        /formGet                      controllers.SampleForm.nameColorGet(name, color)
 
-# Prefix must match `play.assets.urlPrefix`
+# Prefix must match `play.assets.urlPrefix` 
 GET        /assets/*file                 controllers.Assets.at(file)
 GET        /versionedAssets/*file        controllers.Assets.versioned(path="/public", file: Asset)
