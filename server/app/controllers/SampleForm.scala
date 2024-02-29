@@ -12,8 +12,23 @@ class SampleForm @Inject()(cc: ControllerComponents) extends AbstractController(
     Ok(s"Jerry")
   }
 
-  def nameColorGet(name: String, color: String) = Action {
-    Ok(s"$name and $color")
+  def showNameColor(name: String, color: String) = Action {
+    Ok(s"Hi $name, I see your favority color is $color!")
+  }
+
+  def nameColorGet = Action {
+    Ok(views.html.colorForm()) 
+  }
+
+  def makeUsername = Action {
+    Ok(views.html.usernameForm())
   }
   
+  def showUsername = Action { request => 
+    val postVals = request.body.asFormUrlEncoded
+    postVals.map { args => 
+      val username = args("username").head
+      Ok(s"$username has logged in!")
+      }.getOrElse(Ok("Opps!"))
+  }
 }
