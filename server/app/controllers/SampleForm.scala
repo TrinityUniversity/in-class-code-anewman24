@@ -31,4 +31,9 @@ class SampleForm @Inject()(cc: ControllerComponents) extends AbstractController(
       Ok(s"$username has logged in!")
       }.getOrElse(Ok("Opps!"))
   }
+
+  // def enterUser = Action {
+  //   Ok(views.html.usernameForm())
+  // }
+
 }
