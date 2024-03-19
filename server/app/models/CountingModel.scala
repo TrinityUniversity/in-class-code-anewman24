@@ -11,7 +11,7 @@ object CountingModel {
         return count;
     }
 
-    def setValue():Unit = {
+    def increase():Unit = {
         count = count + 1
     }
 }

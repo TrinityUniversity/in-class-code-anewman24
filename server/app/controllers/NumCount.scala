@@ -13,7 +13,7 @@ class NumCount @Inject()(cc: ControllerComponents) extends AbstractController(cc
         Ok(views.html.counter(count))
     }
     def increase = Action {
-        CountingModel.setValue()
+        CountingModel.increase()
         val count = CountingModel.getValue()
         Ok(views.html.counter(count))
     }
