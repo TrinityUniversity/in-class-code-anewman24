@@ -16,6 +16,9 @@ GET        /increase                     controllers.NumCount.increase
 + nocsrf 
 POST       /showUsername                 controllers.SampleForm.showUsername
 
+# Routes for version1
+GET        /version1Main                 controllers.ReactVers1.load
+
 # Prefix must match `play.assets.urlPrefix` 
 GET        /assets/*file                 controllers.Assets.at(file)
 GET        /versionedAssets/*file        controllers.Assets.versioned(path="/public", file: Asset)
