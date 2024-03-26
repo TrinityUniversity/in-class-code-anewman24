@@ -8,5 +8,5 @@ class Hello extends React.Component {
 
 ReactDOM.render(
     <Hello toWhat="world" />,
-    document.getElementById('react-root')
+    document.getElementById('root')
 )

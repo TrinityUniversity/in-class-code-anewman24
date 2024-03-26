@@ -10,13 +10,15 @@ GET        /form1                        controllers.SampleForm.login
 GET        /showNameColor                controllers.SampleForm.showNameColor(name, color)
 GET        /nameColorGet                 controllers.SampleForm.nameColorGet
 GET        /username                     controllers.SampleForm.makeUsername
+
+# 3/7 Counting Model w/ Ajax and Websockets
 GET        /counter                      controllers.NumCount.accessModel
 GET        /increase                     controllers.NumCount.increase
 
 + nocsrf 
 POST       /showUsername                 controllers.SampleForm.showUsername
 
-# Routes for version1
+# Routes for React version1
 GET        /version1Main                 controllers.ReactVers1.load
 
 # Prefix must match `play.assets.urlPrefix` 
