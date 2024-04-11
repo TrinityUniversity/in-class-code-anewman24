@@ -13,6 +13,9 @@ object ScalaJSExample {
     // This line demonstrates using Scala.js to modify the DOM.
     dom.document.getElementById("scalajsShoutOut").textContent = SharedMessages.itWorks
 
+    ScalaJSInClass.printToTen()
+
+    ScalaJSInClass.countingButton()
     // What is below is using Scala.js with Slinky to use React.
     println("Call the react stuff.")
     ReactDOM.render(
