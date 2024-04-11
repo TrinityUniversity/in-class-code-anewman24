@@ -14,10 +14,13 @@ object ScalaJSInClass {
         }
     }
 
+    var counter = 0
+
     def countingButton() {
         val button = dom.document.createElement("button")
-        button.textContent = "Click Me!"
         button.addEventListener("click", {(e:dom.MouseEvent) =>
+            counter += 1 
+            button.textContent = counter.toString()
             println("Was Clicked!")    
         })
         dom.document.body.appendChild(button)

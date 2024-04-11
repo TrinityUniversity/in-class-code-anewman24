@@ -15,7 +15,7 @@ object ScalaJSExample {
 
     ScalaJSInClass.printToTen()
 
-    ScalaJSInClass.countingButton()
+    ScalaJSInClass.countingButton();
     // What is below is using Scala.js with Slinky to use React.
     println("Call the react stuff.")
     ReactDOM.render(
